@@ -1,7 +1,12 @@
 @charset "UTF-8"
 @font-face {
-    font-family: 'WorkSans';
-    src: url(../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf) format(truetype), url(../assets/fonts/WorkSans-VariableFont_wght.ttf) format(truetype), url(../assets/fonts/static/WorkSans-Bold.ttf) format(truetype), url(../assets/fonts/static/WorkSans-Regular.ttf) format(truetype), url(../assets/fonts/static/WorkSans-SemiBold.ttf) format(truetype);
+    font-family: 'Particular';
+    src: 
+    url(../assets/fonts/static/WorkSans-Regular.ttf) format(truetype),
+    url(../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf) format(truetype), 
+    url(../assets/fonts/WorkSans-VariableFont_wght.ttf) format(truetype), 
+    url(../assets/fonts/static/WorkSans-Bold.ttf) format(truetype),  
+    url(../assets/fonts/static/WorkSans-SemiBold.ttf) format(truetype);
 }
 
 * {
@@ -10,8 +15,21 @@
 }
 
 body {
-    font-family: 'WorkSans', Arial, Helvetica, Sans;
+    font: bolder 'Particular', Arial;
     text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    color: hsl(292, 42%, 14%)
+}
+
+p {
+    font-size: 16px;
 }
 
 div#principal {
@@ -23,16 +41,38 @@ div#principal {
 }
 
 div#container {
-    width: 600px;
-    height: 800px;
+    width: 700px;
+    height: 700px;
     margin: 100px 60% 24px 40%;
-    border: 2px solid black;
-    display: center;
+    border: 2px solid white;
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 10px 5px 10px black;    
+}
+.div-content {
+    margin-bottom: 10px;
+    align-items: center;
 }
 
-div.div-content > p{
-    display: none;
+.div-content > p{
+    margin-bottom: 10px;
+    
 }
 
-div.div-title {
+.div-title {
+    display: flex;
+    justify-content: start;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.div-title-box {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
 }
