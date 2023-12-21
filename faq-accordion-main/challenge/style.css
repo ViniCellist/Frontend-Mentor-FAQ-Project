@@ -1,0 +1,38 @@
+@charset "UTF-8"
+@font-face {
+    font-family: 'WorkSans';
+    src: url(../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf) format(truetype), url(../assets/fonts/WorkSans-VariableFont_wght.ttf) format(truetype), url(../assets/fonts/static/WorkSans-Bold.ttf) format(truetype), url(../assets/fonts/static/WorkSans-Regular.ttf) format(truetype), url(../assets/fonts/static/WorkSans-SemiBold.ttf) format(truetype);
+}
+
+* {
+    border: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'WorkSans', Arial, Helvetica, Sans;
+    text-align: center;
+}
+
+div#principal {
+    width: 100vw;
+    height: 35vh;
+    background-image: url("../assets/images/background-pattern-desktop.svg");
+    background-size: cover;
+
+}
+
+div#container {
+    width: 600px;
+    height: 800px;
+    margin: 100px 60% 24px 40%;
+    border: 2px solid black;
+    display: center;
+}
+
+div.div-content > p{
+    display: none;
+}
+
+div.div-title {
+}
