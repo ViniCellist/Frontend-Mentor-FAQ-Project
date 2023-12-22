@@ -21,18 +21,24 @@ body {
 
 h1 {
     font-size: 50px;
+    color: hsl(292, 42%, 14%);
 }
 
 h2 {
-    font-size: 30px;
-    color: hsl(292, 42%, 14%)
+    font-size: 25px;
+    color: hsl(292, 42%, 14%);
+    font-weight: bold;
 }
 
 p {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    color: hsl(292, 16%, 49%);
 }
 
-div#principal {
+/* header */
+
+#principal {
     width: 100vw;
     height: 35vh;
     background-image: url("../assets/images/background-pattern-desktop.svg");
@@ -40,9 +46,11 @@ div#principal {
 
 }
 
-div#container {
-    width: 700px;
-    height: 700px;
+/* section */
+
+#container {
+    width: 40vw;
+    height: 80vh;
     margin: 100px 60% 24px 40%;
     border: 2px solid white;
     position: absolute;
@@ -51,17 +59,11 @@ div#container {
     margin: auto;
     background-color: white;
     border-radius: 25px;
-    box-shadow: 10px 5px 10px black;    
-}
-.div-content {
-    margin-bottom: 10px;
-    align-items: center;
+    box-shadow: 10px 5px 10px black;
+    flex-direction: column; 
 }
 
-.div-content > p{
-    margin-bottom: 10px;
-    
-}
+/*topo section*/
 
 .div-title {
     display: flex;
@@ -69,10 +71,47 @@ div#container {
     margin-left: 40px;
     margin-bottom: 10px;
 }
-
 .div-title-box {
     height: 100px;
     display: flex;
     align-items: center;
     margin-left: 40px;
+}
+/*article*/
+
+.div-content {
+    margin-bottom: 10px;
+    justify-content: start;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+.div-content > p{
+    margin-bottom: 10px;
+    display: none;
+}
+
+/*area de teste*/
+.teste {
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+    
+}
+
+#b1 {
+    background-color: red;
+    width: 35vw;
+}
+#b2 {
+    background-color: blue;
+    width: 5vw;
+}
+#b3 {
+    background-color: green;
+    width: 40vw;
+    grid-column: 1
 }
