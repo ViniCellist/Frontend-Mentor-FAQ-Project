@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 30px;
     color: hsl(292, 42%, 14%);
     font-weight: bold;
 }
@@ -60,7 +60,7 @@ p {
     background-color: white;
     border-radius: 25px;
     box-shadow: 10px 5px 10px black;
-    flex-direction: column; 
+    flex-direction: row; 
 }
 
 /*topo section*/
@@ -81,37 +81,25 @@ p {
 
 .div-content {
     margin-bottom: 10px;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 78.5vh 11vh;
     
 }
 
-.div-content > p{
+.div-content > div > p{
     margin-bottom: 10px;
-    display: none;
+    text-align: left;
 }
 
-/*area de teste*/
-.teste {
-    height: 100px;
-    border: 1px solid black;
-    text-align: center;
-    
-}
-
-#b1 {
-    background-color: red;
+.grid-box-h2 {
     width: 35vw;
 }
-#b2 {
-    background-color: blue;
+.grid-box-img {
     width: 5vw;
 }
-#b3 {
-    background-color: green;
+.grid-box-p {
     width: 40vw;
-    grid-column: 1
 }
